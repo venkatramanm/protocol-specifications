@@ -1,0 +1,21 @@
+description: A Note logged on an issue for clarification or resolution as part of the communication between logger and the resolver
+type: object
+properties:
+  id:
+    type: string
+  text:
+    type: string
+  media:
+    type: array
+    items:
+      $ref: "./MediaFile.yaml"
+  images:
+    type: array
+    items:
+      $ref: "./Image.yaml"
+  created_by:
+    $ref: "./Contact.yaml"
+  created_at:
+    description: The date-time of creation of this order
+    type: string
+    format: date-time

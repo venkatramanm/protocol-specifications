@@ -15,3 +15,5 @@ properties:
   url:
     type: string
     format: uri
+  issue:
+    $ref: "Issue.yaml"
